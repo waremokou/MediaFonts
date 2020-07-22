@@ -1,0 +1,73 @@
+/* Scss Document */
+.blog {
+  &Main {
+    &_tag {
+      margin: 20px 0;
+
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        li {
+          &::after {
+            content: ' / ';
+            display: inline;
+          }
+
+          &:last-of-type::after {
+            content: '';
+            display: none;
+          }
+        }
+      }
+    }
+
+    &_share {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      a {
+        display: block;
+        margin-right: 20px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        img {
+          width: 110px;
+          height: auto;
+        }
+      }
+    }
+
+    &_image {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 20px 0;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    &Main {
+      &_tag {
+        margin: 40px 0 20px;
+      }
+
+      p {
+        margin: 30px 0;
+      }
+    }
+  }
+}

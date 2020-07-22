@@ -1,0 +1,147 @@
+.hamburger {
+  border: 1px #7B7B7B solid;
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: .2s;
+  margin: 15px 15px 15px 10px;
+
+  span, &::before, &::after {
+    position: relative;
+    display: block;
+    content: '';
+    margin: 0 auto;
+    top: 16px;
+    width: 20px;
+    height: 2px;
+    background-color: #7B7B7B;
+    transition: .2s;
+  }
+
+  &::before {
+    transform: translateY(-6px);
+  }
+
+  &::after {
+    transform: translateY(6px);
+  }
+
+  &.open {
+    span {
+      opacity: 0;
+    }
+
+    &::before {
+      transform: rotateZ(45deg) translateY(2px);
+      width: 30px;
+    }
+
+    &::after {
+      transform: rotateZ(-45deg) translateY(-2px);
+      width: 30px;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  > a {
+    display: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    position: fixed;
+    right: -300px;
+    top: 80px;
+    height: calc(100% - 80px);
+    width: 300px;
+    background-color: #FFFFFF;
+    transition: .2s;
+    padding-top: 40px;
+
+    &.open {
+      right: 0;
+    }
+
+    li {
+      line-height: 40px;
+
+      a {
+        display: block;
+        padding-left: 40px;
+
+        &:hover {
+          background-color: #000000;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    height: 70px;
+    width: 70px;
+    margin: 15px 0 15px 20px;
+
+    span, &::before, &::after {
+    top: 31px;
+    width: 40px;
+    }
+
+    &::before {
+      transform: translateY(-12px);
+    }
+
+    &::after {
+      transform: translateY(12px);
+    }
+
+    &.open {
+      &::before {
+        width: 50px;
+      }
+
+      &::after {
+        width: 50px;
+      }
+    }
+  }
+
+  nav {
+    > a {
+      display: block;
+
+      i {
+        font-size: 30px;
+        margin-right: 10px;
+
+        &.fa-twitter-square {
+          color: #00ACEE;
+        }
+
+        &.fa-facebook-square {
+          color: #3B5998;
+        }
+      }
+    }
+
+    ul {
+      top: 110px;
+      height: calc(100% - 110px);
+
+      li {
+        line-height: 50px;
+      }
+    }
+  }
+}

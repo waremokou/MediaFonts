@@ -1,0 +1,43 @@
+/* Scss Document */
+
+.index {
+  &Header {
+    position: relative;
+    width: 100%;
+    height: 210px;
+
+    &_square {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #E8E8E8;
+      width: 80%;
+      height: 160px;
+    }
+
+    p {
+      position: absolute;
+      bottom: 0;
+//      left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .index {
+    &Header {
+      max-width: 1000px;
+      margin: 140px auto 0;
+      height: 450px;
+
+      &_square {
+        height: 380px;
+        width: calc(100% - 120px);
+      }
+
+/*      p {
+        left: -120px;
+}*/
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* Scss Document */
+.headerMargin_index {
+  margin-top: 100px;
+}
+
+.headerMargin_other {
+  margin-top: 110px;
+}
+
+.headerMargin p {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .headerMargin_other {
+    margin-top: 180px;
+  }
+}

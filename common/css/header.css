@@ -1,0 +1,43 @@
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  z-index: 499;
+  background-color: #FFFFFF;
+}
+
+header > div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div h1 {
+  height: 100%;
+  padding: 5px;
+  margin: 0;
+}
+
+header > div h1 a {
+  display: block;
+  height: 100%;
+}
+
+header > div h1 a img {
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  }
+  header > div {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
