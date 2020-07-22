@@ -1,0 +1,20 @@
+/*base*/
+@import url("../css/reset.css");
+
+/*vendors*/
+@import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
+
+/*global*/
+@import url("../css/layout.css");
+@import url("../css/typography.css");
+@import url("../css/utility.css");
+
+/*components*/
+@import url("../css/header.css");
+@import url("../css/footer.css");
+@import url("../css/sidebar.css");
+
+/*page*/
+@import url("../css/home.css");
+@import url("../css/blog.css");
+@import url("../css/contact.css");

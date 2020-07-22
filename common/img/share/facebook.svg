@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="36" viewBox="0 0 110 36">
+  <g id="facebook" transform="translate(-262 -1035)">
+    <rect id="長方形_31" data-name="長方形 31" width="110" height="36" transform="translate(262 1035)" fill="#3b5998"/>
+    <g id="グループ_14" data-name="グループ 14" transform="translate(5.999 3)">
+      <path id="facebook-f-brands" d="M32.9,11.25l.555-3.62H29.982V5.282a1.81,1.81,0,0,1,2.041-1.955H33.6V.245A19.254,19.254,0,0,0,30.8,0c-2.86,0-4.73,1.734-4.73,4.872V7.63H22.89v3.62h3.179V20h3.913V11.25Z" transform="translate(256.11 1040)" fill="#fff"/>
+      <text id="シェア" transform="translate(302 1055)" fill="#fff" font-size="14" font-family="HiraKakuProN-W6, Hiragino Kaku Gothic ProN"><tspan x="0" y="0">シェア</tspan></text>
+    </g>
+  </g>
+</svg>
