@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Scss Document */
 .blogMain_tag {
   margin: 20px 0;
@@ -10,13 +11,23 @@
 }
 
 .blogMain_tag ul li::after {
-  content: ' / ';
+  content: '　/　';
   display: inline;
 }
 
 .blogMain_tag ul li:last-of-type::after {
   content: '';
   display: none;
+}
+
+.blogMain_link {
+  text-decoration: underline;
+  color: #237CA3;
+}
+
+.blogMain_link:hover {
+  color: #66AFCE;
+  text-decoration: underline;
 }
 
 .blogMain_share {
@@ -46,10 +57,6 @@
 
 .blogMain p {
   margin: 20px 0;
-}
-
-.blogMain p a {
-  text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {

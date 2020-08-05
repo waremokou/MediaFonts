@@ -1,38 +1,26 @@
 $(function(){
 
+  /*---　ハンバーガーメニュー　---*/
   $('.hamburger').click(function(){
     $('.hamburger').toggleClass('open');
     $('nav ul').toggleClass('open');
   });
 
 
-/*  function indexHeaderPos(){
-    let wW = $(window).width();
-    console.log(wW);
-    if( wW < 768 ){
-      $('.indexHeader p').css({
-        'left': 0
-      });
-    }else if( wW <= 1000 ){
-      $('.indexHeader p').css({
-        'left': 0
-      });
-    }else if(wW <= 1240){
-      $('.indexHeader p').css({
-        'left': ((wW-1000)/2*-1) + 'px'
-      });
-    }else{
-      console.log('実行したよ');
-      $('.indexHeader p').css({
-        'left': '-120px'
-      });
-    }
-  }
-  //初期実行
-  indexHeaderPos();
+  /*---　記事左寄せ　---*/
+  let singleW = $('.mainFlex li').eq(0).width();
+  $('.mainFlex li').each(function(index,element){
+    $('.mainFlex').append('<li style="height:0; width:'+ singleW +'px; margin:0; padding:0;" class="append"></li>');
+  });
+
+  /*---　ウィンドウ可変イベント　---*/
   $(window).resize(function(){
-    indexHeaderPos();
-  });*/
+    singleW = $('.mainFlex li').eq(0).width();
+    $('.append').css({
+      'width': singleW +'px'
+    });
+  });
+
 
 
 });
