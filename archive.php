@@ -37,6 +37,7 @@
             ?>
         </ul>
 
+      <?php wp_pagenavi(); ?>
       </article>
     </div>
     <?php get_footer(); ?>
