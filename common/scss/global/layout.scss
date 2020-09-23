@@ -52,6 +52,10 @@
 .main {
   &Wrap {
     margin: 30px 20px 50px;
+
+    > p {
+      margin: 20px 0;
+    }
   }
 
   &Flex {
